@@ -1,5 +1,5 @@
 {
-    "name": "apimatic/promptpaymentsapi",
+    "name": "promptpay/promptpaymentsapi",
     "description": "All requests to the Prompt Pay API are sent via the HTTP POST method to one of our API endpoint URLs.  HTTP Request Method : POST API Endpoint : http://promptpayments.io/payment/process JSON Content-Type : application/json All calls to the Prompt Pay API require merchant authentication and merchant access key. Sign up for a account to quickly get started. Sandbox payment can be also initiated while merchant set the service mode as test in merchant dashboard. It will be live while the mode will be set as active mode.",
     "version": "1.0.0",
     "type": "library",
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PromptPaymentsAPILib\\": "src/"
+            "PromptPaymentsSDKLib\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PromptPaymentsAPILib\\Tests\\": "tests/"
+            "PromptPaymentsSDKLib\\Tests\\": "tests/"
         }
     },
     "scripts": {

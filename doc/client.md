@@ -20,7 +20,7 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```php
-$client = new PromptPaymentsAPILib\PromptPaymentsAPIClient([
+$client = new PromptPaymentsSDKLib\PromptPaymentsSDKClient([
     // Set authentication parameters
     'accessToken' => 'AccessToken',
 

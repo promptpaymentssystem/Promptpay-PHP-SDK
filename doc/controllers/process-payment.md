@@ -56,31 +56,3 @@ $customerEmail = 'kazzy@gmail.com';
 $processPaymentController->createMakePayment($custom, $currencyCode, $amount, $details, $webHook, $cancelUrl, $successUrl, $customerEmail);
 ```
 
-## Full Example
-
-```php
-<?php
-
-require_once "vendor/autoload.php";
-
-$client = new PromptPaymentsAPILib\PromptPaymentsAPIClient([
-    'accessToken' => 'AccessToken',
-]);
-
-$processPaymentController = $client->getProcessPaymentController();
-
-$custom = 'DFU80XZIKS';
-$currencyCode = 'USD';
-$amount = 100;
-$details = 'jkhfkhae';
-$webHook = 'http://yoursite.com/web_hook.php';
-$cancelUrl = 'http://yoursite.com/cancel_url.php';
-$successUrl = 'http://yoursite.com/success_url.php';
-$customerEmail = 'kazzy@gmail.com';
-
-try {
-    $processPaymentController->createMakePayment($custom, $currencyCode, $amount, $details, $webHook, $cancelUrl, $successUrl, $customerEmail);
-} catch (PromptPaymentsAPILib\Exceptions\ApiException $e) {
-    echo 'Caught ApiException: ',  $e->getMessage(), "\n";
-}
-```
