@@ -53,6 +53,15 @@ $cancelUrl = 'http://yoursite.com/cancel_url.php';
 $successUrl = 'http://yoursite.com/success_url.php';
 $customerEmail = 'kazzy@gmail.com';
 
-$processPaymentController->createMakePayment($custom, $currencyCode, $amount, $details, $webHook, $cancelUrl, $successUrl, $customerEmail);
+$processPaymentController->createMakePayment(
+$custom, 
+$currencyCode, 
+$amount,
+$details, 
+$webHook, 
+$cancelUrl, 
+$successUrl, 
+$customerEmail
+);
 ```
 
