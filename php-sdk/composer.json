@@ -1,0 +1,23 @@
+{
+    "name": "PromptPay/php-sdk",
+    "description": "PromptPay Payment GateWay",
+    "type": "library",
+    "authors": [
+    {
+        "name": "KAzashim Kuzasuwat",
+        "email": "kazashim@promptpayments/io"
+    }],
+    "require":
+    {
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload":
+    {
+        "psr-0":
+        {
+            "PromptPay": "src/"
+        }
+    }
+}
