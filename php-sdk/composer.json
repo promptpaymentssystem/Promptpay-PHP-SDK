@@ -1,5 +1,5 @@
 {
-    "name": "PromptPay/php-sdk",
+    "name": "promptpay/php-sdk",
     "description": "PromptPay Payment GateWay",
     "type": "library",
     "authors": [
